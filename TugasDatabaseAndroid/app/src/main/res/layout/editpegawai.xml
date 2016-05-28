@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_id_pegawai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Pegawai ID : "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#0000ff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText_nama_pegawai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:layout_below="@id/text_id_pegawai"
+        >
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@+id/editText_alamat_pegawai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:layout_below="@id/editText_nama_pegawai"
+        />
+    <EditText
+        android:id="@+id/editText_jk_pegawai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:layout_below="@id/editText_alamat_pegawai"
+        />
+
+    <EditText
+        android:id="@+id/editText_status_pegawai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:layout_below="@id/editText_jk_pegawai"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button_save_edit_pegawai"
+        android:layout_below="@+id/editText_status_pegawai"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/button_cancel_edit_pegawai"
+        android:layout_below="@+id/editText_status_pegawai"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
